@@ -2,6 +2,103 @@
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
 
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.container{
+  margin:0 auto;
+  padding: 0 15px;
+}
+
+body {
+  font-family: 'Quicksand';
+}
+
+header{
+  background-color: #3268a8;
+  color:white;
+  height: 80px;
+  width:100%;
+}
+
+.logo{
+  color: white;
+  font-size: 50px;
+  font-family: Radley;
+  font-style: italic;
+  font-weight: bold;
+  padding:0 20px;
+  line-height: 75px;
+}
+
+header ul{
+  float: right;
+  padding-right:20px;
+  
+  
+}
+
+header li{
+  display: inline-block;
+  line-height: 78px;
+  margin:0 10px;
+  
+}
+
+header a{
+  color: white;
+}
+
+header a:hover{
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.check{
+  font-size: 30px;
+  line-height: 78px;
+  float: right;
+  cursor: pointer;
+  padding-right:20px;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+@media (max-width: 500px){
+  
+  .check{
+    display: block;
+  }
+
+  header ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #3268a8;
+    top: 80px;
+    left: 200%;
+    text-align: center;
+    transition: all .5s;
+  }
+  
+  header li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  #check:checked ~ ul{
+    left: 0;
+  }
+
+}
 
 body {
   margin: 0;
@@ -100,3 +197,132 @@ a {
 }
 
 /*---------------------------------------- END MAIN -----------------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lucida Grande";
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.icon { 
+  font-size : 25px;
+  display : inline-block;
+  padding : 0 4px;
+  color : rgba(29, 60, 98, 0.5);
+}
+
+.icon:hover {
+  color : rgba(29, 60, 98, 0.8);
+}
+
+.lesson-wrapper {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.heading h2 {
+  font-weight: bold;
+  color: #234876;
+}
+
+.lesson {
+  float: left;
+  width: 25%;
+}
+
+.lesson-icon {
+  position: relative;
+}
+
+.lesson p {
+	margin: 0;
+}
+
+.text-contents {
+  width: 80%;
+  display: inline-block;
+  font-size: 15px;
+  color: #234876;
+}
+
+.description {
+	margin-top : 12px;
+	margin-bottom : 8px;
+}
+
+.text-contents span{
+  font-weight : bold; 
+}
+
+
+.frame {
+	width : 200px;
+	margin-bottom : 10px;
+}
+
+.item {
+	width : 40px
+}
+
+footer {
+  padding: 0;
+  background-color: #263238;
+  padding: 10px;
+}
+
+footer .container .footer-logo {
+  color: white;
+  font-size: 50px;
+  font-family: Radley;
+  font-style: italic;
+  font-weight: bold;
+  padding:0 20px;
+  line-height: 75px;
+}
+
+footer .container .text {
+  font-size: 12px;
+  padding:0 20px;
+  padding-bottom: 20px;
+  color: white;
+}
+
+footer .container .text-cp {
+  font-size: 12px;
+  color: white;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.fa-copyright {
+  padding-right: 5px;
+}
+
