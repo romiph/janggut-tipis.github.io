@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Radley:ital@1&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.container{
+  margin:0 auto;
+  padding: 0 15px;
+}
+
+body {
+  font-family: 'Quicksand';
+}
+
+header{
+  background-color: #3268a8;
+  color:white;
+  height: 80px;
+  width:100%;
+}
+
+.logo{
+  color: white;
+  font-size: 50px;
+  font-family: Radley;
+  font-style: italic;
+  font-weight: bold;
+  padding:0 20px;
+  line-height: 75px;
+}
+
+header ul{
+  float: right;
+  padding-right:20px;
+  
+  
+}
+
+header li{
+  display: inline-block;
+  line-height: 78px;
+  margin:0 10px;
+  
+}
+
+header a{
+  color: white;
+}
+
+header a:hover{
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.check{
+  font-size: 30px;
+  line-height: 78px;
+  float: right;
+  cursor: pointer;
+  padding-right:20px;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+@media (max-width: 500px){
+  
+  .check{
+    display: block;
+  }
+
+  header ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #3268a8;
+    top: 80px;
+    left: 200%;
+    text-align: center;
+    transition: all .5s;
+  }
+  
+  header li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  #check:checked ~ ul{
+    left: 0;
+  }
+
+}
