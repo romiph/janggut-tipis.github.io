@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Radley:ital@1&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+/*----------------------------------------- MAIN ------------------------------------*/
+.main {
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.main img {
+	display: block;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+    height: auto;
+}
+
+.main .slider {
+	position: relative;
+	display: flex;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 15s slider infinite;
+}
+
+.slide {
+	flex: auto;
+	width: 20%
+	background-size: cover, cover;
+}
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -300%;
+	}
+}
+
+.welcome-text {
+	margin-top: 10px!important;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 36px;
+}
+
+.team-name b{
+	font-family: "Segoe UI",Arial,sans-serif;
+	background-color: #3268a8;
+	opacity: 0.95;
+	box-sizing: border-box;
+	letter-spacing: 10px;
+	padding: 5px;
+}
+
+.ceb-ugm {
+  font-family: "Quicksand";
+}
+
+/*---------------------------------------- END MAIN -----------------------------------*/
